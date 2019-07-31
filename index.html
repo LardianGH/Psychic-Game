@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Stylesheet" href="assets/css/style.css">
+    <title>Psychic</title>
+</head>
+<body class="body">
+<p class="speechText">Guess what letter I'm thinking of...</p>
+
+<section class="scoreBoard">
+
+    <p id="wins"> Wins: 0</p>
+    <p id="losses"> Losses: 0</p>
+    <p id="guessLeft"> Guesses left: 0</p>
+    <p id="yourGuess"> Your guesses: 10</p>
+</section>
+
+    <img src="assets/images/Psychic.png" id="psyBoss">
+   
+
+        <textarea name="myTextBox" placeholder="Enter guess here" cols="50" rows="2" id="inputBox"></textarea>
+    
+        <input type="submit" name="guess" class="submit" onclick="enterGuess()"></input>
+
+    
+</body>
+    <script src="assets\javascript\game.js"></script>
+</html>

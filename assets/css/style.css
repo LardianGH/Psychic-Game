@@ -1,0 +1,30 @@
+.body {
+    overflow: visible;
+}
+
+#psyBoss {
+    margin-left: 90px;
+    margin-top: 0px;
+    height:600px;
+}
+
+.speechText {
+    text-align: center;
+    margin-right: 70px;
+}
+
+.scoreBoard {
+    float: left;
+}
+
+#inputBox {
+    margin-left: 440px;
+    float:left
+}
+
+.submit {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    float:left
+}
