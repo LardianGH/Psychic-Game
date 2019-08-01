@@ -3,18 +3,24 @@
 }
 
 #psyBoss {
-    margin-left: 90px;
+    margin-left: 0px;
     margin-top: 0px;
     height:600px;
 }
 
-.speechText {
+#speechText {
     text-align: center;
     margin-right: 70px;
 }
 
 .scoreBoard {
     float: left;
+    border-style: solid;
+    border-color: magenta;
+    background-color: lavender;
+    padding-left: 5px;
+    width: 195px;
+    height: 200px;
 }
 
 #inputBox {

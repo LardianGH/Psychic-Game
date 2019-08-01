@@ -7,8 +7,8 @@
     <link rel="Stylesheet" href="assets/css/style.css">
     <title>Psychic</title>
 </head>
-<body class="body">
-<p class="speechText">Guess what letter I'm thinking of...</p>
+<body class="body" onload="javascript:restart()"> <!-- May break -->
+<p id="speechText">Guess what letter I'm thinking of...</p>
 
 <section class="scoreBoard">
 
@@ -25,6 +25,7 @@
     
         <input type="submit" name="guess" class="submit" onclick="enterGuess()"></input>
 
+        
     
 </body>
     <script src="assets\javascript\game.js"></script>
