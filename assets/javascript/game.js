@@ -8,8 +8,15 @@ var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
 var randomNum = alphabet[Math.floor(Math.random() * alphabet.length)];
 console.log(randomNum)
 function enterGuess() {
+
 document.getElementById("inputBox").value;
-console.log(inputBox.value)
+
+if (alphabet.indexOf(inputBox.value) !== -1) {
+    console.log("Yes")
+previous = inputBox.value;
+
+
+
     guesses--
 
 console.log(wins)
@@ -22,8 +29,15 @@ console.log(previous)
     document.getElementById("guessLeft").innerHTML = "Guesses left: " + guesses;
     document.getElementById("yourGuess").innerHTML = "Your guesses: " + previous;
 
-    document.getElementById('inputBox').value = " ";
+    
 }
 
-wins++
-losses++
+else if (alphabet.indexOf((inputBox.value)) === -1){
+    console.log("No")
+    
+    alert("You can't do that")
+}
+document.getElementById('inputBox').value = "";
+}
+// wins++
+// losses++
