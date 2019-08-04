@@ -14,19 +14,22 @@ restart = function () {
 };
 
 function enterGuess() {
-
 document.getElementById("inputBox").value; //gets the value from the textbox
+console.log(inputBox.value) //logs the player's guess
 
-    console.log(inputBox.value) //logs the player's guess
-if (alphabet.indexOf(inputBox.value) !== -1) { //checks to see if the player's guess is a single lowercase letter
+lowKey = document.getElementById("inputBox").value.toLowerCase();
+console.log(lowKey)
+
+
+if (alphabet.indexOf(lowKey) !== -1) { //checks to see if the player's guess is a single lowercase letter
     console.log("Yes") //logs if it is a single lowercase letter
-previous.push(inputBox.value); //pushes the player's guess to an array
+previous.push(lowKey); //pushes the player's guess to an array
 
 
 
     guesses-- //takes away a guess
 
-    if (inputBox.value === randomLetter) { //checks to see if the player's guess is correct
+    if (lowKey === randomLetter) { //checks to see if the player's guess is correct
         document.getElementById("speechText").innerHTML = "What? No. How is this possible?" //The boss is aghast!
         console.log("You win") //logs your victory
         wins++ //adds to wins
